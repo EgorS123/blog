@@ -21,8 +21,8 @@ Route::get('/post/create', 'PostController@showCreate')->name('create.post');
 Route::post('/post/create', 'PostController@create');
 
 
-Route::get('/post/{id}/edit', 'PostController@showEdit')->name('edit.post');
-Route::post('post/{id}/edit', 'PostController@edit');
+Route::get('/post/edit/{id}', 'PostController@showEdit')->name('edit.post');
+Route::post('post/edit/{id}', 'PostController@edit');
 
 
 Route::post('comment/create', 'CommentController@create')->name('create.comment');
